@@ -1,6 +1,6 @@
-# starlinks
+# starlinksdubai
 
-Static website for Star Links Advertising LLC, a Dubai-based printing and advertising company.
+Static Bootstrap 5 business website for a Dubai-based printing and advertising company.
 
 ## Pages
 
@@ -10,20 +10,37 @@ Static website for Star Links Advertising LLC, a Dubai-based printing and advert
 - `portfolio.html`
 - `contact.html`
 
-## Deploy
+## Assets
 
-This is a static HTML/CSS/JS website. Upload the full folder to GitHub as repository `starlinks`, then host it with GitHub Pages, Vercel, Netlify, or any static hosting provider.
+- `assets/css/style.css`
+- `assets/js/main.js`
+- `assets/img/*.svg`
 
-## GitHub Upload Commands
+## Launch Notes
 
-```powershell
-cd "C:\Users\Administrator\Documents\Codex\2026-07-09\you-are-a-senior-ui-ux\outputs\starlinks"
-git init
-git add .
-git commit -m "Initial Star Links website"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/starlinks.git
-git push -u origin main
-```
+- WhatsApp quote submissions are configured to `+971527266343`.
+- Quote email is configured as `star06@eim.ae`.
+- New Star Links image assets are included under `assets/img/` and the original source uploads are preserved under `assets/img/new-images/`.
+- Replace the map background image with a live Google Maps embed if you want interactive map controls.
+- Upload the folder contents to any static hosting service.
 
-Replace `YOUR-USERNAME` with your GitHub username after creating the `starlinks` repository on GitHub.
+## Vercel Deploy
+
+This folder is ready for Vercel static hosting as project `starlinksdubai`.
+
+1. Install Node.js from `https://nodejs.org/`.
+2. Install Vercel CLI:
+   ```powershell
+   npm install -g vercel
+   ```
+3. Open this folder in PowerShell:
+   ```powershell
+   cd "C:\Users\Administrator\Documents\Codex\2026-07-09\you-are-a-senior-ui-ux\outputs\star-links-advertising"
+   ```
+4. Log in and deploy:
+   ```powershell
+   vercel login
+   vercel --prod --name starlinksdubai
+   ```
+
+You can also upload the ZIP manually from the Vercel dashboard.
