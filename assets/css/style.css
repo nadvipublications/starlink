@@ -103,12 +103,23 @@ img {
   color: #243240;
   font-weight: 600;
   font-size: 0.94rem;
-  padding: 0.75rem 0.85rem;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  transition:
+    color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.navbar-nav {
+  gap: 0.35rem;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
   color: var(--sl-cyan);
+  background: rgba(8, 166, 200, 0.1);
+  transform: scale(1.06);
 }
 
 .btn {
@@ -350,11 +361,19 @@ img {
   border-radius: var(--sl-radius);
   background: var(--sl-white);
   box-shadow: var(--sl-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .package-card ul {
   padding-left: 1.15rem;
   color: var(--sl-muted);
+  margin-bottom: 1.4rem;
+}
+
+.package-card .btn {
+  margin-top: auto;
 }
 
 .digital-band {
@@ -367,6 +386,24 @@ img {
 .digital-band .section-title h2,
 .digital-band .text-secondary {
   color: rgba(255, 255, 255, 0.86) !important;
+}
+
+.digital-band .section-title p {
+  color: var(--sl-white);
+}
+
+.why-choose-grid > [class*="col-"] {
+  display: flex;
+}
+
+.why-choose-grid .feature-card {
+  width: 100%;
+  background: var(--sl-soft);
+}
+
+.why-choose-grid .icon-box {
+  color: var(--sl-white);
+  background: var(--sl-cyan);
 }
 
 .mini-check-list {
@@ -598,6 +635,13 @@ img {
 
   .section-pad {
     padding: 64px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .why-choose-grid > [class*="col-"] {
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }
 
