@@ -226,10 +226,10 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--sl-orange);
+  color: var(--sl-cyan);
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   letter-spacing: 0.08em;
 }
 
