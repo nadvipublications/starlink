@@ -442,19 +442,25 @@ img {
   background: var(--sl-white);
 }
 
+.client-logo-grid {
+  --client-logo-height: clamp(520px, 142vw, 760px);
+}
+
 .client-card {
-  border: 0;
-  background: transparent;
-  box-shadow: none;
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--sl-radius);
+  background: #6f6f6f;
+  box-shadow: 0 18px 40px rgba(13, 59, 102, 0.12);
 }
 
 .client-img {
-  height: auto;
-  max-height: none;
-  object-fit: contain;
-  padding: 0;
-  background: var(--sl-white);
-  border-radius: var(--sl-radius);
+  display: block;
+  width: 100%;
+  height: var(--client-logo-height);
+  object-fit: cover;
+  object-position: center;
+  background: #6f6f6f;
 }
 
 .stat-band {
