@@ -436,14 +436,18 @@ img {
 }
 
 .client-card {
-  background: var(--sl-white);
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .client-img {
-  height: 260px;
+  height: auto;
+  max-height: none;
   object-fit: contain;
-  padding: 1.25rem;
+  padding: 0;
   background: var(--sl-white);
+  border-radius: var(--sl-radius);
 }
 
 .stat-band {
