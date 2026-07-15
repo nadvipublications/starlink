@@ -397,13 +397,28 @@ img {
 }
 
 .why-choose-grid .feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
   width: 100%;
   background: var(--sl-soft);
 }
 
 .why-choose-grid .icon-box {
+  flex: 0 0 62px;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 0 !important;
   color: var(--sl-white);
   background: var(--sl-cyan);
+}
+
+.why-choose-grid .feature-card p {
+  align-self: flex-start;
+  color: var(--sl-primary);
+  font-size: clamp(1.05rem, 1.6vw, 1.28rem);
+  line-height: 1.38;
+  padding-top: 0.1rem;
 }
 
 .mini-check-list {
@@ -459,7 +474,7 @@ img {
   width: 100%;
   height: var(--client-logo-height);
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
   background: #6f6f6f;
 }
 
