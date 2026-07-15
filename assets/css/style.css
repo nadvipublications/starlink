@@ -16,15 +16,36 @@
 }
 
 html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   color: var(--sl-ink);
   font-family: "Poppins", Arial, sans-serif;
   line-height: 1.7;
   background: var(--sl-white);
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+@supports not (overflow: clip) {
+  .site-header,
+  main,
+  .site-footer {
+    overflow-x: hidden;
+  }
 }
 
 h1,
