@@ -457,12 +457,7 @@ img {
   background: var(--sl-white);
 }
 
-.client-logo-grid {
-  --client-logo-height: clamp(520px, 142vw, 760px);
-}
-
 .client-card {
-  height: 100%;
   overflow: hidden;
   border-radius: var(--sl-radius);
   background: #6f6f6f;
@@ -472,8 +467,7 @@ img {
 .client-img {
   display: block;
   width: 100%;
-  height: var(--client-logo-height);
-  object-fit: cover;
+  height: auto;
   object-position: top center;
   background: #6f6f6f;
 }
